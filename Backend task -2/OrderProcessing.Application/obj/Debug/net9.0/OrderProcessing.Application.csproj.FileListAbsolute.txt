@@ -1,0 +1,15 @@
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\bin\Debug\net9.0\OrderProcessing.Application.deps.json
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\bin\Debug\net9.0\OrderProcessing.Application.dll
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\bin\Debug\net9.0\OrderProcessing.Application.pdb
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\bin\Debug\net9.0\OrderProcessing.Domain.dll
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\bin\Debug\net9.0\OrderProcessing.Domain.pdb
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.csproj.AssemblyReference.cache
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.AssemblyInfoInputs.cache
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.AssemblyInfo.cs
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.csproj.CoreCompileInputs.cache
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderPro.D38CDE08.Up2Date
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.dll
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\refint\OrderProcessing.Application.dll
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.pdb
+D:\Ahmad\Desktop\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\ref\OrderProcessing.Application.dll
