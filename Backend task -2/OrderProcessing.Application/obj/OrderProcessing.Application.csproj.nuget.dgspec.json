@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Ahmad\\Desktop\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj": {}
+    "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj": {}
   },
   "projects": {
-    "D:\\Ahmad\\Desktop\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj": {
+    "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ahmad\\Desktop\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj",
+        "projectUniqueName": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj",
         "projectName": "OrderProcessing.Application",
-        "projectPath": "D:\\Ahmad\\Desktop\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj",
+        "projectPath": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj",
         "packagesPath": "C:\\Users\\a.fratekh\\.nuget\\packages\\",
-        "outputPath": "D:\\Ahmad\\Desktop\\Backend task -2\\OrderProcessing.Application\\obj\\",
+        "outputPath": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Ahmad\\Desktop\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj": {
-                "projectPath": "D:\\Ahmad\\Desktop\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj"
+              "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj": {
+                "projectPath": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "D:\\Ahmad\\Desktop\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj": {
+    "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ahmad\\Desktop\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
+        "projectUniqueName": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
         "projectName": "OrderProcessing.Domain",
-        "projectPath": "D:\\Ahmad\\Desktop\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
+        "projectPath": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
         "packagesPath": "C:\\Users\\a.fratekh\\.nuget\\packages\\",
-        "outputPath": "D:\\Ahmad\\Desktop\\Backend task -2\\OrderProcessing.Domain\\obj\\",
+        "outputPath": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

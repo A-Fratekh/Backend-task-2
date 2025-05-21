@@ -9,26 +9,27 @@ using OrderProcessing.Domain.Shared;
 
 namespace OrderProcessing.Domain.Aggregates.OrderAggregate;
 
-public class OrderItem
+public class OrderItem : Entity
 {
     public int OrderItemId { get; private set; }
-    [ForeignKey(nameof(Product))]
+    public int OrderId { get; private set; }
     public int ProductId { get; private set; }
     public int Quantity { get; private set; } = 1;
     public Money Price { get; private set; }
     public string Comments { get; private set; }
 
     private OrderItem() { }
-    public OrderItem( int productId, int quantity, Money price, string comments)
+    public OrderItem(int orderId, int productId, int quantity, Money price, string comments)
     {
+        OrderId = orderId;
         ProductId = productId;
         Quantity = quantity;
         Price = price;
         Comments = comments;
     }
 
-    //public void UpdateQuantity()
-    //{
-    //    Quantity += 1;
-    //}
+    internal void UpdateQuantity()
+    {
+        Quantity += 1;
+    }
 }
