@@ -3,9 +3,8 @@ using OrderProcessing;
 using Microsoft.OpenApi.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using EmployeeProfile.Infrastructure;
-
-
+using OrderProcessing.Infrastructure;
+using OrderProcessing.Application.Services.Orders.Queries;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,9 +16,14 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 builder.Services.AddInfrastructure(builder.Configuration);
+
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssemblies(typeof(Program).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(GetOrderByIdQueryHandler).Assembly);
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

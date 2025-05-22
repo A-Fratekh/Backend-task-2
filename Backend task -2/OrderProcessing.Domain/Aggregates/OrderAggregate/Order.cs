@@ -15,60 +15,62 @@ public class Order : Entity, IAggregateRoot
     public Money Total { get; private set; }
     public OrderState State { get; private set; } = OrderState.Draft;
     public bool IsSubmitted { get; private set; } = false;
-    private readonly List<OrderItem> _orderItems = []!;
+    private readonly List<OrderItem> _orderItems = [];
     public IReadOnlyList<OrderItem> OrderItems => _orderItems;
 
     private Order() { }
 
-    public Order(DateOnly date, string customerName, Money total, OrderState state, bool isSubmitted)
+    public Order(
+        int orderId,
+        DateOnly date,
+        string customerName,
+        OrderState state,
+        List<OrderItem> orderItems,
+        bool isSubmitted = false
+        )
     {
+        OrderId = orderId;
         Date = date;
         CustomerName = customerName;
-        Total = total;
         State = state;
+        Total = CalculateOrderTotalAmount();
         IsSubmitted = isSubmitted;
-        _orderItems = new List<OrderItem>();
+        _orderItems = orderItems;
     }
-    public void AddOrderItem(int productId, int quantity, Money price, string comments)
+
+    public void AddOrderItem(int orderItemId, int orderId, int productId, int quantity, Money price, string comments)
     {
-
-        var item = _orderItems.FirstOrDefault(oi => oi.ProductId == productId);
-
-        if (item == null) { 
-            item = new OrderItem(OrderId, productId, quantity, price, comments);
+        
+          var  item = new OrderItem(orderItemId, orderId, productId, quantity, price, comments);
             _orderItems.Add(item); 
-        }
-        else
-        {
-            item.UpdateQuantity();
-        }
-        CalculateOrderTotalAmount();
+        
+       
+        Total = CalculateOrderTotalAmount();
     }
-    //TODO: 
     public void RemoveOrderItem(int itemId)
     {
-        //OrderItem ? item = _orderItems.Find(oi=>oi.OrderItemId==itemId);
-        //if (item==null)
-        //{
-        //    throw new NullReferenceException($"Item with id {itemId} does not exist");
-        //}
-        //_orderItems.Remove(item);
-        //CalculateOrderTotalAmount();
+        OrderItem? item = _orderItems.Find(oi => oi.OrderItemId == itemId);
+        if (item == null)
+        {
+            throw new NullReferenceException($"Item with id {itemId} does not exist");
+        }
+        _orderItems.Remove(item);
+        Total = CalculateOrderTotalAmount();
     }
     public Money CalculateOrderTotalAmount()
     {
-        decimal total = 0;
+        Money total = new Money();
         foreach (var item in _orderItems)
         {
-            total += (item.Price.Amount * item.Quantity);
+                total.Amount += item.Price.Amount * item.Quantity;
         }
-        Total.Amount = total;
-        return Total;
+       
+        return total;
     }
-    public void SubmitOrder()
-    {
-        IsSubmitted = true;
-        State = OrderState.Submitted;
-    }
+    //public void SubmitOrder()
+    //{
+    //    IsSubmitted = true;
+    //    State = OrderState.Submitted;
+    //}
 
 }

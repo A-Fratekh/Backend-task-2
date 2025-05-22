@@ -14,22 +14,24 @@ public class OrderItem : Entity
     public int OrderItemId { get; private set; }
     public int OrderId { get; private set; }
     public int ProductId { get; private set; }
-    public int Quantity { get; private set; } = 1;
+    public int Quantity { get; private set; }
     public Money Price { get; private set; }
-    public string Comments { get; private set; }
+    public string? Comments { get; private set; }
 
     private OrderItem() { }
-    public OrderItem(int orderId, int productId, int quantity, Money price, string comments)
+    public OrderItem(int orderItemId, int orderId, int productId, int quantity,Money price, string comments)
     {
+        OrderItemId = orderItemId;
         OrderId = orderId;
         ProductId = productId;
         Quantity = quantity;
-        Price = price;
         Comments = comments;
+        Price = price;
     }
+    
 
-    internal void UpdateQuantity()
+    internal void UpdateQuantity( int quantity)
     {
-        Quantity += 1;
+        Quantity += quantity;
     }
 }

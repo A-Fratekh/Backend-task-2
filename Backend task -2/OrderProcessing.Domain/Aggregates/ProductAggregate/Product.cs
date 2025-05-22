@@ -16,8 +16,9 @@ public class Product :Entity, IAggregateRoot
     public Money CurrentPrice { get; private set; }
    
     private Product() { }
-    public Product(string name, string description, byte[] photo, Money currentPrice)
+    public Product(int productId, string name, string description, byte[] photo, Money currentPrice)
     {
+        ProductId = productId;
         Name = name;
         Description = description;
         Photo = photo;

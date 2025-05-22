@@ -21,3 +21,15 @@ D:\Ahmad\Desktop\github\Backend task\Backend-Task\Backend task -2\OrderProcessin
 D:\Ahmad\Desktop\github\Backend task\Backend-Task\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\refint\OrderProcessing.Domain.dll
 D:\Ahmad\Desktop\github\Backend task\Backend-Task\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\OrderProcessing.Domain.pdb
 D:\Ahmad\Desktop\github\Backend task\Backend-Task\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\ref\OrderProcessing.Domain.dll
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Domain\bin\Debug\net9.0\OrderProcessing.Domain.deps.json
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Domain\bin\Debug\net9.0\OrderProcessing.Domain.dll
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Domain\bin\Debug\net9.0\OrderProcessing.Domain.pdb
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\OrderProcessing.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\OrderProcessing.Domain.AssemblyInfoInputs.cache
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\OrderProcessing.Domain.AssemblyInfo.cs
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\OrderProcessing.Domain.csproj.CoreCompileInputs.cache
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\OrderProcessing.Domain.sourcelink.json
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\OrderProcessing.Domain.dll
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\refint\OrderProcessing.Domain.dll
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\OrderProcessing.Domain.pdb
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\ref\OrderProcessing.Domain.dll
