@@ -1,166 +1,142 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\",
+  "WorkspaceRootPath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.infrastructure\\persistence\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\persistence\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.application\\services\\orders\\commands\\createordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\services\\orders\\commands\\createordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.domain\\aggregates\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\aggregates\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.application\\services\\orders\\queries\\getordersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\services\\orders\\queries\\getordersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.infrastructure\\persistence\\repositories\\readrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\persistence\\repositories\\readrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.domain\\seedwork\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\seedwork\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.infrastructure\\migrations\\20250522131807_seedingdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\migrations\\20250522131807_seedingdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.infrastructure\\persistence\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\persistence\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.application\\services\\orders\\commands\\updateordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.application\\services\\orders\\commands\\updateordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\services\\orders\\commands\\updateordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.application\\services\\orders\\queries\\getorderbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\services\\orders\\queries\\getorderbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.api\\validation\\orders\\updateordervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|solutionrelative:orderprocessing.api\\validation\\orders\\updateordervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.application\\services\\orders\\commands\\deleteordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\services\\orders\\commands\\deleteordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.api\\validation\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|solutionrelative:orderprocessing.api\\validation\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.domain\\aggregates\\productaggregate\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\aggregates\\productaggregate\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.domain\\aggregates\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\aggregates\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.domain\\aggregates\\orderaggregate\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\aggregates\\orderaggregate\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|solutionrelative:orderprocessing.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.domain\\shared\\money.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\shared\\money.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|solutionrelative:orderprocessing.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.infrastructure\\migrations\\migrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\migrations\\migrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.domain\\seedwork\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\seedwork\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.application\\domaineventhandlers\\productpricechangedeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\domaineventhandlers\\productpricechangedeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.domain\\aggregates\\productaggregate\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\aggregates\\productaggregate\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.application\\services\\products\\commands\\updateproductpricecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\services\\products\\commands\\updateproductpricecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|solutionrelative:orderprocessing.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.domain\\aggregates\\orderaggregate\\orderstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\aggregates\\orderaggregate\\orderstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|solutionrelative:orderprocessing.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.application\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|solutionrelative:orderprocessing.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.application\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.infrastructure\\persistence\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\persistence\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|solutionrelative:orderprocessing.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.infrastructure\\persistence\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\persistence\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.api\\orderprocessing.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|solutionrelative:orderprocessing.api\\orderprocessing.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.api\\validation\\orders\\createordervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|solutionrelative:orderprocessing.api\\validation\\orders\\createordervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.api\\orderprocessing.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|solutionrelative:orderprocessing.api\\orderprocessing.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.application\\services\\orders\\commands\\createordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\services\\orders\\commands\\createordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{10486C06-26B4-4B79-B2EC-5653351710E6}|OrderProcessing.Api\\OrderProcessing.Api.csproj|solutionrelative:orderprocessing.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.domain\\aggregates\\orderaggregate\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\aggregates\\orderaggregate\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.domain\\orderprocessing.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\orderprocessing.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.application\\services\\orders\\commands\\deleteordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\services\\orders\\commands\\deleteordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.application\\orderprocessing.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\orderprocessing.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.domain\\seedwork\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\seedwork\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.domain\\seedwork\\valueobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\seedwork\\valueobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.domain\\seedwork\\iaggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\seedwork\\iaggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.domain\\seedwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.domain\\seedwork\\idomainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\seedwork\\idomainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.infrastructure\\persistence\\repositories\\readrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\persistence\\repositories\\readrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.application\\services\\orders\\queries\\getordersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\services\\orders\\queries\\getordersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.domain\\seedwork\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\seedwork\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.application\\services\\orders\\queries\\getorderbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C5C11-6327-49E0-B3C8-32859872BC69}|OrderProcessing.Application\\OrderProcessing.Application.csproj|solutionrelative:orderprocessing.application\\services\\orders\\queries\\getorderbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.domain\\seedwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\seedwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.domain\\seedwork\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\seedwork\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.domain\\aggregates\\productaggregate\\productpricechangedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\aggregates\\productaggregate\\productpricechangedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|d:\\ahmad\\desktop\\github\\backend task-2\\backend task -2\\orderprocessing.infrastructure\\orderprocessing.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\orderprocessing.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.domain\\shared\\money.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAEA7E1-507A-4519-ACE7-6AD37B39A3D1}|OrderProcessing.Domain\\OrderProcessing.Domain.csproj|solutionrelative:orderprocessing.domain\\shared\\money.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\Entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.infrastructure\\migrations\\20250525125639_modifyingorderitementity1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\migrations\\20250525125639_modifyingorderitementity1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\UnitOfWork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.infrastructure\\migrations\\20250525120942_modifyingorderitementity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\migrations\\20250525120942_modifyingorderitementity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\Repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.infrastructure\\migrations\\20250525111714_modifyingorderentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\migrations\\20250525111714_modifyingorderentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\ReadRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.infrastructure\\migrations\\20250525110432_renamingids2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\migrations\\20250525110432_renamingids2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IUnitOfWork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.infrastructure\\migrations\\20250525105325_renamingids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\migrations\\20250525105325_renamingids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IReadRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\Shared\\Value Objects\\Money.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task-2\\backend task -2\\orderprocessing.infrastructure\\migrations\\20250525105713_renamingids1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61438E47-6F07-4897-B76E-B33FF349FAD4}|OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj|solutionrelative:orderprocessing.infrastructure\\migrations\\20250525105713_renamingids1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -170,545 +146,449 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetOrdersQueryHandler.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrdersQueryHandler.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrdersQueryHandler.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrdersQueryHandler.cs",
-              "RelativeToolTip": "OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrdersQueryHandler.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBgAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "UpdateProductPriceCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Products\\Commands\\UpdateProductPriceCommandHandler.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Application\\Services\\Products\\Commands\\UpdateProductPriceCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Products\\Commands\\UpdateProductPriceCommandHandler.cs",
+              "RelativeToolTip": "OrderProcessing.Application\\Services\\Products\\Commands\\UpdateProductPriceCommandHandler.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T09:04:44.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IReadRepository.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IReadRepository.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Domain\\SeedWork\\IReadRepository.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IReadRepository.cs",
-              "RelativeToolTip": "OrderProcessing.Domain\\SeedWork\\IReadRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T06:21:14.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReadRepository.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\Repositories\\ReadRepository.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Persistence\\Repositories\\ReadRepository.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\Repositories\\ReadRepository.cs",
-              "RelativeToolTip": "OrderProcessing.Infrastructure\\Persistence\\Repositories\\ReadRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAswBgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T06:26:29.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateOrderCommandHandler.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Commands\\CreateOrderCommandHandler.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Application\\Services\\Orders\\Commands\\CreateOrderCommandHandler.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Commands\\CreateOrderCommandHandler.cs",
-              "RelativeToolTip": "OrderProcessing.Application\\Services\\Orders\\Commands\\CreateOrderCommandHandler.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAADwvy8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T06:54:58.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\OrderAggregate\\Order.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Domain\\Aggregates\\OrderAggregate\\Order.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\OrderAggregate\\Order.cs",
-              "RelativeToolTip": "OrderProcessing.Domain\\Aggregates\\OrderAggregate\\Order.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAjwCsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T10:35:32.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Persistence\\Repositories\\Repository.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\Repositories\\Repository.cs",
-              "RelativeToolTip": "OrderProcessing.Infrastructure\\Persistence\\Repositories\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T06:24:02.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20250522131807_SeedingDb.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250522131807_SeedingDb.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Migrations\\20250522131807_SeedingDb.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250522131807_SeedingDb.cs",
-              "RelativeToolTip": "OrderProcessing.Infrastructure\\Migrations\\20250522131807_SeedingDb.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAQwFYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T13:18:10.003Z",
+              "WhenOpened": "2025-05-25T16:45:34.303Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "OrderProcessing.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAowDYAAAAbAAAAAAAAAA==",
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\ProductAggregate\\Product.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Domain\\Aggregates\\ProductAggregate\\Product.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\ProductAggregate\\Product.cs",
+              "RelativeToolTip": "OrderProcessing.Domain\\Aggregates\\ProductAggregate\\Product.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T11:54:31.964Z",
+              "WhenOpened": "2025-05-25T13:30:08.872Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Persistence\\UnitOfWork.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\UnitOfWork.cs",
-              "RelativeToolTip": "OrderProcessing.Infrastructure\\Persistence\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "ProductPriceChangedEventHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\DomainEventHandlers\\ProductPriceChangedEventHandler.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Application\\DomainEventHandlers\\ProductPriceChangedEventHandler.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\DomainEventHandlers\\ProductPriceChangedEventHandler.cs",
+              "RelativeToolTip": "OrderProcessing.Application\\DomainEventHandlers\\ProductPriceChangedEventHandler.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T06:27:29.632Z",
+              "WhenOpened": "2025-05-25T16:36:16.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\OrderAggregate\\Order.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Domain\\Aggregates\\OrderAggregate\\Order.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\OrderAggregate\\Order.cs",
+              "RelativeToolTip": "OrderProcessing.Domain\\Aggregates\\OrderAggregate\\Order.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwE8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T10:52:26.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UpdateOrderCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Commands\\UpdateOrderCommandHandler.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Application\\Services\\Orders\\Commands\\UpdateOrderCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Commands\\UpdateOrderCommandHandler.cs",
+              "RelativeToolTip": "OrderProcessing.Application\\Services\\Orders\\Commands\\UpdateOrderCommandHandler.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAIA2wFkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T10:54:02.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ValidationBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Api\\Validation\\ValidationBehavior.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Api\\Validation\\ValidationBehavior.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Api\\Validation\\ValidationBehavior.cs",
+              "RelativeToolTip": "OrderProcessing.Api\\Validation\\ValidationBehavior.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T18:17:09.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateOrderValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Api\\Validation\\Orders\\UpdateOrderValidator.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Api\\Validation\\Orders\\UpdateOrderValidator.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Api\\Validation\\Orders\\UpdateOrderValidator.cs",
+              "RelativeToolTip": "OrderProcessing.Api\\Validation\\Orders\\UpdateOrderValidator.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBYAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T18:25:19.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "OrderProcessing.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T12:16:18.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "OrderProcessing.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAmwAIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T10:52:24.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "UpdateOrderCommandHandler.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Commands\\UpdateOrderCommandHandler.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Application\\Services\\Orders\\Commands\\UpdateOrderCommandHandler.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Commands\\UpdateOrderCommandHandler.cs",
-              "RelativeToolTip": "OrderProcessing.Application\\Services\\Orders\\Commands\\UpdateOrderCommandHandler.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAkwCkAAAAJAAAAAAAAAA==",
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Api\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Api\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Api\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "OrderProcessing.Api\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAiwEEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:24:06.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GetOrderByIdQueryHandler.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrderByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrderByIdQueryHandler.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrderByIdQueryHandler.cs",
-              "RelativeToolTip": "OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrderByIdQueryHandler.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAjwCkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T09:05:25.09Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DeleteOrderCommandHandler.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Commands\\DeleteOrderCommandHandler.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Application\\Services\\Orders\\Commands\\DeleteOrderCommandHandler.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Commands\\DeleteOrderCommandHandler.cs",
-              "RelativeToolTip": "OrderProcessing.Application\\Services\\Orders\\Commands\\DeleteOrderCommandHandler.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T08:21:36.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\ProductAggregate\\Product.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Domain\\Aggregates\\ProductAggregate\\Product.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\ProductAggregate\\Product.cs",
-              "RelativeToolTip": "OrderProcessing.Domain\\Aggregates\\ProductAggregate\\Product.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAYwBQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T11:44:49.407Z",
+              "WhenOpened": "2025-05-25T10:54:02.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\OrderAggregate\\OrderItem.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Domain\\Aggregates\\OrderAggregate\\OrderItem.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\OrderAggregate\\OrderItem.cs",
-              "RelativeToolTip": "OrderProcessing.Domain\\Aggregates\\OrderAggregate\\OrderItem.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAwwBUAAAAmAAAAAAAAAA==",
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Persistence\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\Repositories\\Repository.cs",
+              "RelativeToolTip": "OrderProcessing.Infrastructure\\Persistence\\Repositories\\Repository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwA8AAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T10:35:49.974Z",
+              "WhenOpened": "2025-05-25T10:54:02.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Api\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Api\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Api\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "OrderProcessing.Api\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T16:47:06.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Persistence\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\UnitOfWork.cs",
+              "RelativeToolTip": "OrderProcessing.Infrastructure\\Persistence\\UnitOfWork.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwCsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T11:26:11.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Api\\Program.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Api\\Program.cs",
+              "RelativeToolTip": "OrderProcessing.Api\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T18:47:43.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "OrderProcessing.Api\\appsettings.json",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\appsettings.json",
-              "RelativeToolTip": "OrderProcessing.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-20T12:35:35.636Z",
+              "Title": "CreateOrderValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Api\\Validation\\Orders\\CreateOrderValidator.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Api\\Validation\\Orders\\CreateOrderValidator.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Api\\Validation\\Orders\\CreateOrderValidator.cs",
+              "RelativeToolTip": "OrderProcessing.Api\\Validation\\Orders\\CreateOrderValidator.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T18:12:10.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\Program.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Api\\Program.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\Program.cs",
-              "RelativeToolTip": "OrderProcessing.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\OrderAggregate\\OrderItem.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Domain\\Aggregates\\OrderAggregate\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\OrderAggregate\\OrderItem.cs",
+              "RelativeToolTip": "OrderProcessing.Domain\\Aggregates\\OrderAggregate\\OrderItem.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T12:36:35.305Z",
+              "WhenOpened": "2025-05-25T10:52:30.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Money.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\Shared\\Money.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Domain\\Shared\\Money.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\Shared\\Money.cs",
-              "RelativeToolTip": "OrderProcessing.Domain\\Shared\\Money.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Title": "CreateOrderCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Commands\\CreateOrderCommandHandler.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Application\\Services\\Orders\\Commands\\CreateOrderCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Commands\\CreateOrderCommandHandler.cs",
+              "RelativeToolTip": "OrderProcessing.Application\\Services\\Orders\\Commands\\CreateOrderCommandHandler.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAD4vykAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T11:48:41.747Z",
+              "WhenOpened": "2025-05-25T10:57:44.644Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "MigrationService.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\MigrationService.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Migrations\\MigrationService.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\MigrationService.cs",
-              "RelativeToolTip": "OrderProcessing.Infrastructure\\Migrations\\MigrationService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAnwCQAAAAUAAAAAAAAAA==",
+              "Title": "DeleteOrderCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Commands\\DeleteOrderCommandHandler.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Application\\Services\\Orders\\Commands\\DeleteOrderCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Commands\\DeleteOrderCommandHandler.cs",
+              "RelativeToolTip": "OrderProcessing.Application\\Services\\Orders\\Commands\\DeleteOrderCommandHandler.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAWwB0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T09:58:48.778Z",
+              "WhenOpened": "2025-05-25T12:02:07.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\DependencyInjection.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\DependencyInjection.cs",
-              "RelativeToolTip": "OrderProcessing.Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCYAAAABAAAAAAAAAA==",
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\Entity.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Domain\\SeedWork\\Entity.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\Entity.cs",
+              "RelativeToolTip": "OrderProcessing.Domain\\SeedWork\\Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwAsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T12:53:44.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "OrderState.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\OrderAggregate\\OrderState.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Domain\\Aggregates\\OrderAggregate\\OrderState.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\OrderAggregate\\OrderState.cs",
-              "RelativeToolTip": "OrderProcessing.Domain\\Aggregates\\OrderAggregate\\OrderState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T10:49:33.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Api\\Controllers\\OrdersController.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "OrderProcessing.Api\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCEAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:17:53.493Z",
+              "WhenOpened": "2025-05-25T16:04:07.776Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\Entity.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Domain\\SeedWork\\Entity.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\Entity.cs",
-              "RelativeToolTip": "OrderProcessing.Domain\\SeedWork\\Entity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "IAggregateRoot.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IAggregateRoot.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Domain\\SeedWork\\IAggregateRoot.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IAggregateRoot.cs",
+              "RelativeToolTip": "OrderProcessing.Domain\\SeedWork\\IAggregateRoot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T09:59:03.335Z",
+              "WhenOpened": "2025-05-25T17:49:05.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "OrderItemDto.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\DTOs\\OrderItemDto.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Application\\DTOs\\OrderItemDto.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\DTOs\\OrderItemDto.cs",
-              "RelativeToolTip": "OrderProcessing.Application\\DTOs\\OrderItemDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAANAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "IDomainEvent.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IDomainEvent.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Domain\\SeedWork\\IDomainEvent.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IDomainEvent.cs",
+              "RelativeToolTip": "OrderProcessing.Domain\\SeedWork\\IDomainEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T08:02:50.78Z",
+              "WhenOpened": "2025-05-25T16:34:29.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "OrderDto.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\DTOs\\OrderDto.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Application\\DTOs\\OrderDto.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\DTOs\\OrderDto.cs",
-              "RelativeToolTip": "OrderProcessing.Application\\DTOs\\OrderDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAfAAAAAAAAAA==",
+              "Title": "IReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IReadRepository.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Domain\\SeedWork\\IReadRepository.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IReadRepository.cs",
+              "RelativeToolTip": "OrderProcessing.Domain\\SeedWork\\IReadRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T08:02:26.975Z",
+              "WhenOpened": "2025-05-25T11:53:06.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "OrderProcessing.Api.csproj",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\OrderProcessing.Api.csproj",
-              "RelativeDocumentMoniker": "OrderProcessing.Api\\OrderProcessing.Api.csproj",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\OrderProcessing.Api.csproj",
-              "RelativeToolTip": "OrderProcessing.Api\\OrderProcessing.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-20T12:29:52.942Z",
+              "DocumentIndex": 21,
+              "Title": "ReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\Repositories\\ReadRepository.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Persistence\\Repositories\\ReadRepository.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\Repositories\\ReadRepository.cs",
+              "RelativeToolTip": "OrderProcessing.Infrastructure\\Persistence\\Repositories\\ReadRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T11:22:10.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GetOrdersQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrdersQueryHandler.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrdersQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrdersQueryHandler.cs",
+              "RelativeToolTip": "OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrdersQueryHandler.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T11:04:12.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "OrderProcessing.Api\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\Properties\\launchSettings.json",
-              "RelativeToolTip": "OrderProcessing.Api\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-22T09:30:16.025Z",
+              "Title": "GetOrderByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrderByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrderByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrderByIdQueryHandler.cs",
+              "RelativeToolTip": "OrderProcessing.Application\\Services\\Orders\\Queries\\GetOrderByIdQueryHandler.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAiwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T11:04:07.874Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "OrderProcessing.Api\\appsettings.Development.json",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\appsettings.Development.json",
-              "RelativeToolTip": "OrderProcessing.Api\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-22T09:27:38.437Z",
+              "DocumentIndex": 25,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Domain\\SeedWork\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "OrderProcessing.Domain\\SeedWork\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T12:47:14.339Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "OrderProcessing.Api.http",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\OrderProcessing.Api.http",
-              "RelativeDocumentMoniker": "OrderProcessing.Api\\OrderProcessing.Api.http",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Api\\OrderProcessing.Api.http",
-              "RelativeToolTip": "OrderProcessing.Api\\OrderProcessing.Api.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-05-22T09:27:49.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "OrderProcessing.Application",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj",
-              "RelativeDocumentMoniker": "OrderProcessing.Application\\OrderProcessing.Application.csproj",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj",
-              "RelativeToolTip": "OrderProcessing.Application\\OrderProcessing.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-22T06:53:53.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ValueObject.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\ValueObject.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Domain\\SeedWork\\ValueObject.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\ValueObject.cs",
-              "RelativeToolTip": "OrderProcessing.Domain\\SeedWork\\ValueObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ProductPriceChangedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\ProductAggregate\\ProductPriceChangedEvent.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Domain\\Aggregates\\ProductAggregate\\ProductPriceChangedEvent.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\Aggregates\\ProductAggregate\\ProductPriceChangedEvent.cs",
+              "RelativeToolTip": "OrderProcessing.Domain\\Aggregates\\ProductAggregate\\ProductPriceChangedEvent.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T06:23:20.954Z",
+              "WhenOpened": "2025-05-25T16:00:27.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Domain\\SeedWork\\IUnitOfWork.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IUnitOfWork.cs",
-              "RelativeToolTip": "OrderProcessing.Domain\\SeedWork\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 27,
+              "Title": "Money.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\Shared\\Money.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Domain\\Shared\\Money.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\Shared\\Money.cs",
+              "RelativeToolTip": "OrderProcessing.Domain\\Shared\\Money.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T06:22:51.296Z",
+              "WhenOpened": "2025-05-25T15:56:09.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "OrderProcessing.Domain.csproj",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
-              "RelativeDocumentMoniker": "OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
-              "RelativeToolTip": "OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-20T10:34:24.386Z",
+              "Title": "20250525125639_modifyingOrderItemEntity1.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250525125639_modifyingOrderItemEntity1.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Migrations\\20250525125639_modifyingOrderItemEntity1.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250525125639_modifyingOrderItemEntity1.cs",
+              "RelativeToolTip": "OrderProcessing.Infrastructure\\Migrations\\20250525125639_modifyingOrderItemEntity1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T12:56:40.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20250525120942_modifyingOrderItemEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250525120942_modifyingOrderItemEntity.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Migrations\\20250525120942_modifyingOrderItemEntity.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250525120942_modifyingOrderItemEntity.cs",
+              "RelativeToolTip": "OrderProcessing.Infrastructure\\Migrations\\20250525120942_modifyingOrderItemEntity.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T12:09:42.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20250525111714_modifyingOrderEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250525111714_modifyingOrderEntity.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Migrations\\20250525111714_modifyingOrderEntity.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250525111714_modifyingOrderEntity.cs",
+              "RelativeToolTip": "OrderProcessing.Infrastructure\\Migrations\\20250525111714_modifyingOrderEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T11:17:40.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20250525110432_RenamingIds2.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250525110432_RenamingIds2.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Migrations\\20250525110432_RenamingIds2.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250525110432_RenamingIds2.cs",
+              "RelativeToolTip": "OrderProcessing.Infrastructure\\Migrations\\20250525110432_RenamingIds2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T11:04:36.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20250525105713_RenamingIds1.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250525105713_RenamingIds1.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Migrations\\20250525105713_RenamingIds1.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250525105713_RenamingIds1.cs",
+              "RelativeToolTip": "OrderProcessing.Infrastructure\\Migrations\\20250525105713_RenamingIds1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T10:57:14.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IRepository.cs",
-              "RelativeDocumentMoniker": "OrderProcessing.Domain\\SeedWork\\IRepository.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IRepository.cs",
-              "RelativeToolTip": "OrderProcessing.Domain\\SeedWork\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T06:21:33.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "ReadRepository.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\ReadRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\ReadRepository.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\ReadRepository.cs",
-              "RelativeToolTip": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\ReadRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAzwCIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T08:10:55.435Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "OrderProcessing.Infrastructure.csproj",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj",
-              "RelativeToolTip": "OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj",
+              "Title": "20250525105325_RenamingIds.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250525105325_RenamingIds.cs",
+              "RelativeDocumentMoniker": "OrderProcessing.Infrastructure\\Migrations\\20250525105325_RenamingIds.cs",
+              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\Migrations\\20250525105325_RenamingIds.cs",
+              "RelativeToolTip": "OrderProcessing.Infrastructure\\Migrations\\20250525105325_RenamingIds.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-20T11:53:55.606Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T10:53:28.051Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\Repository.cs",
-              "RelativeDocumentMoniker": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\Repository.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\Repository.cs",
-              "RelativeToolTip": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\Repository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAewA8AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T08:11:42.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\UnitOfWork.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\UnitOfWork.cs",
-              "RelativeToolTip": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Infrastructure\\Persistence\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T08:12:33.723Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\Entity.cs",
-              "RelativeDocumentMoniker": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\Entity.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\Entity.cs",
-              "RelativeToolTip": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\Entity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T10:05:46.986Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IUnitOfWork.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IUnitOfWork.cs",
-              "RelativeToolTip": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T08:07:11.146Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IRepository.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IRepository.cs",
-              "RelativeToolTip": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T08:06:50.6Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "IReadRepository.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IReadRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IReadRepository.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IReadRepository.cs",
-              "RelativeToolTip": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\SeedWork\\IReadRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T08:07:00.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Money.cs",
-              "DocumentMoniker": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\Shared\\Value Objects\\Money.cs",
-              "RelativeDocumentMoniker": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\Shared\\Value Objects\\Money.cs",
-              "ToolTip": "D:\\Ahmad\\Desktop\\github\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\Shared\\Value Objects\\Money.cs",
-              "RelativeToolTip": "..\\..\\Backend task\\Backend-Task\\Backend task -2\\OrderProcessing.Domain\\Shared\\Value Objects\\Money.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T10:40:20.558Z"
             }
           ]
         }

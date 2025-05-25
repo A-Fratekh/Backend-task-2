@@ -5,6 +5,9 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using OrderProcessing.Infrastructure;
 using OrderProcessing.Application.Services.Orders.Queries;
+using EmployeeProfile.Application.Validators;
+using OrderProcessing.Api.Validation.Orders;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,9 +17,11 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Order Processing", Version = "v1" });
 });
-
+builder.Services.AddValidatorsFromAssemblyContaining<CreateOrderValidator>();
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 builder.Services.AddInfrastructure(builder.Configuration);
 
+    
 builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssemblies(typeof(Program).Assembly);

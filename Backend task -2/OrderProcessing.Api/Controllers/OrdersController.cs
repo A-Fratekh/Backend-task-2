@@ -61,8 +61,8 @@ namespace OrderProcessing.Api.Controllers
                 return BadRequest();
 
             await _mediator.Send(request);
-            _unitOfWork.SaveChanges();
-            return NoContent();
+            await _unitOfWork.SaveChangesAsync();
+            return Ok();   
         }
 
         [HttpDelete("{id}")]
@@ -72,7 +72,7 @@ namespace OrderProcessing.Api.Controllers
                 return BadRequest();
 
             await _mediator.Send(request);
-            _unitOfWork.SaveChanges();
+            await _unitOfWork.SaveChangesAsync();
             return Ok();
         }
 

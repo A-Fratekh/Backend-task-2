@@ -17,7 +17,6 @@ public class ReadRepository<T> : IReadRepository<T> where T : class
     public ReadRepository(AppDbContext context)
     {
         _context = context;
-        _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
     }
 
     public IEnumerable<T> GetAll()
@@ -26,19 +25,20 @@ public class ReadRepository<T> : IReadRepository<T> where T : class
 
         return query;
     }
-    public int GetNextId()
+
+    public T GetById(int id, string? include = null)
     {
-        var id = typeof(T).GetProperty("OrderId");
-        if (id == null || id.PropertyType != typeof(int))
-        {
-            throw new InvalidOperationException($"Entity type {typeof(T).Name} does not have an integer Id property");
-        }
+        var query = _context.Set<T>().AsQueryable();
 
-        var maxId = _context.Set<T>()
-            .Select(e => EF.Property<int>(e, "OrderId"))
-            .Max();
-        return maxId + 1;
+        if (!string.IsNullOrEmpty(include))
+            query = query.Include(include);
 
+        var entity = query.FirstOrDefault(e => EF.Property<int>(e, "Id") == id);
+
+        if (entity == null)
+            throw new KeyNotFoundException($"Entity with Number {id} not found");
+
+        return entity;
     }
     public T GetById(int id)
     {
@@ -49,4 +49,23 @@ public class ReadRepository<T> : IReadRepository<T> where T : class
 
         return entity;
     }
+    public T GetById(object[] id)
+    {
+        var entity = _context.Set<T>().Find(id);
+
+        if (entity == null)
+            throw new KeyNotFoundException($"Entity with Number {id} not found");
+
+        return entity;
+    }
+    public IQueryable<T> Query()
+    {
+        return _context.Set<T>().AsQueryable();
+    }
+
+    public async Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate)
+    {
+        return await _context.Set<T>().Where(predicate).ToListAsync();
+    }
+
 }

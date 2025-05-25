@@ -17,7 +17,6 @@ public class CreateOrderCommand : IRequest<int>
     public DateOnly Date {  get; set; }
     public string CustomerName { get; set; }
     public OrderState State { get; set; }
-    public bool IsSubmitted { get; set; } = false;
     public List<OrderItem> OrderItems { get; set; }
 }
 public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand, int>
@@ -37,21 +36,23 @@ public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand, int
         _orderReadRepostiory = orderReadRepostiory;
     }
 
-    public Task<int> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
+    public  Task<int> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
     {
         var order = new Order(request.Id, request.Date, request.CustomerName,
-             request.State, request.OrderItems, request.IsSubmitted);
-        if (request.OrderItems == null)
+             request.State, request.OrderItems);
+        if (order.State == OrderState.Draft)
         {
-            throw new ArgumentNullException(nameof(request.OrderItems));
-        }
-        foreach (var item in request.OrderItems.ToList())
-        {
-            var product = _productReadRepostiory.GetById(item.ProductId);
-            order.AddOrderItem(item.OrderItemId ,request.Id, product.ProductId, item.Quantity, product.CurrentPrice, item.Comments);
+            foreach (var item in request.OrderItems)
+            {
+                var product = _productReadRepostiory.GetById(item.ProductId);
+                if (item.Price.Amount != product.CurrentPrice.Amount)
+                {
+                    throw new ArgumentException($"Item {product.Name} with Id : {item.OrderItemId} price {item.Price.Amount} doesn't equal product {product.Name} current price {product.CurrentPrice.Amount}");
+                }
+            }
         }
         _orderRepostiory.Add(order);
 
-        return Task.FromResult(order.OrderId);
+        return Task.FromResult(order.Id);
     }
 }

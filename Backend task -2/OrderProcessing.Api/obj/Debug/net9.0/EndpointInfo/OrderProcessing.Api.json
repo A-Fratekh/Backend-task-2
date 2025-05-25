@@ -211,6 +211,48 @@
           }
         }
       }
+    },
+    "/api/Products/{id}": {
+      "put": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProductPriceCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProductPriceCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProductPriceCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -233,9 +275,6 @@
           "state": {
             "$ref": "#/components/schemas/OrderState"
           },
-          "isSubmitted": {
-            "type": "boolean"
-          },
           "orderItems": {
             "type": "array",
             "items": {
@@ -256,6 +295,10 @@
         },
         "additionalProperties": false
       },
+      "INotification": {
+        "type": "object",
+        "additionalProperties": false
+      },
       "Money": {
         "type": "object",
         "properties": {
@@ -269,9 +312,18 @@
       "Order": {
         "type": "object",
         "properties": {
-          "orderId": {
+          "domainEvents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/INotification"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "id": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "date": {
             "type": "string",
@@ -287,9 +339,6 @@
           "state": {
             "$ref": "#/components/schemas/OrderState"
           },
-          "isSubmitted": {
-            "type": "boolean"
-          },
           "orderItems": {
             "type": "array",
             "items": {
@@ -303,6 +352,14 @@
       "OrderItem": {
         "type": "object",
         "properties": {
+          "domainEvents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/INotification"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
           "orderItemId": {
             "type": "integer",
             "format": "int32"
@@ -344,8 +401,16 @@
             "type": "integer",
             "format": "int32"
           },
-          "total": {
-            "$ref": "#/components/schemas/Money"
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "customerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "$ref": "#/components/schemas/OrderState"
           },
           "orderItems": {
             "type": "array",
@@ -353,6 +418,20 @@
               "$ref": "#/components/schemas/OrderItem"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateProductPriceCommand": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "newPrice": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

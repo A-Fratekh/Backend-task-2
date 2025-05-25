@@ -17,21 +17,25 @@ public class OrderItem : Entity
     public int Quantity { get; private set; }
     public Money Price { get; private set; }
     public string? Comments { get; private set; }
-
-    private OrderItem() { }
-    public OrderItem(int orderItemId, int orderId, int productId, int quantity,Money price, string comments)
+    protected OrderItem() { }
+    public OrderItem( int orderId, int orderItemId, int productId, int quantity,Money price, string? comments)
     {
-        OrderItemId = orderItemId;
         OrderId = orderId;
+        OrderItemId = orderItemId;
         ProductId = productId;
         Quantity = quantity;
-        Comments = comments;
         Price = price;
+        Comments = comments;
+        
     }
-    
+    internal void UpdatePrice(Money newPrice)
+    {
+        Price = newPrice;
+    }
 
     internal void UpdateQuantity( int quantity)
     {
-        Quantity += quantity;
+        Quantity = quantity;
     }
+
 }

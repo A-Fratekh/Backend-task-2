@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace OrderProcessing.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class SeedingDb : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -83,6 +83,11 @@ namespace OrderProcessing.Infrastructure.Migrations
                     { 4, "Italian Shawerma", "Italian Sahwerma Meal", new byte[0], 3.5m }
                 });
 
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderItems_ProductId",
+                table: "OrderItems",
+                column: "ProductId",
+                unique: false);
         }
 
         /// <inheritdoc />

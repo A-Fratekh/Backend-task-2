@@ -7,6 +7,7 @@ using OrderProcessing.Domain.SeedWork;
 using OrderProcessing.Infrastructure.Data;
 using OrderProcessing.Infrastructure.Migrations;
 using OrderProcessing.Infrastructure.Persistence.Repositories;
+using MediatR;
 
 
 namespace OrderProcessing.Infrastructure
@@ -24,14 +25,17 @@ namespace OrderProcessing.Infrastructure
                 }
                 options.UseSqlServer(connectionString,
                     sqlServerOptions => sqlServerOptions.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName));
-            });
+                options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+                options.EnableSensitiveDataLogging();
 
+            });
+            services.AddScoped<DbContext, AppDbContext>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IReadRepository<>), typeof(ReadRepository<>));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddHostedService<MigrationService>();
-
+           
 
             return services;
         }

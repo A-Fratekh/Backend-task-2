@@ -17,35 +17,32 @@ public class GetOrderByIdQuery : IRequest<OrderDto>
 public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, OrderDto>
 {
     private readonly IReadRepository<Order> _orderReadRepository;
-    public GetOrderByIdQueryHandler(IReadRepository<Order> orderReadRepository)
+    private readonly IReadRepository<OrderItem> _orderItemsReadRepository;
+    public GetOrderByIdQueryHandler(IReadRepository<Order> orderReadRepository, IReadRepository<OrderItem> orderItemsReadRepository)
     {
         _orderReadRepository = orderReadRepository;
+        _orderItemsReadRepository = orderItemsReadRepository;
     }
 
     public Task<OrderDto> Handle(GetOrderByIdQuery request, CancellationToken cancellationToken)
     {
-        var order = _orderReadRepository.GetById(request.OrderId);
-        var orderItems = new List<OrderItemDto>();
+        var order = _orderReadRepository.GetById(request.OrderId, "OrderItems");
 
-            foreach (var orderItem in order.OrderItems)
+        var orderDto = new OrderDto
+        {
+            Id = order.Id,
+            CustomerName = order.CustomerName,
+            Date = order.Date,
+            Total = order.Total.Amount,
+            State = order.State.ToString(),
+            Items = order.OrderItems.Select(oi => new OrderItemDto
             {
-                orderItems.Add(new OrderItemDto
-                {
-                    OrderItemId = orderItem.OrderItemId,
-                    Price = orderItem.Price.Amount,
-                    Quantity = orderItem.Quantity,
-                    Comments = orderItem.Comments,
-                });
-            }
-            var orderDto =new OrderDto
-            {
-                Id = order.OrderId,
-                CustomerName = order.CustomerName,
-                Date = order.Date,
-                Total = order.Total.Amount,
-                State = order.State,
-                Items = orderItems,
-            };
+                OrderItemId = oi.OrderItemId,
+                Price = oi.Price.Amount,
+                Quantity = oi.Quantity,
+                Comments = oi.Comments
+            }).ToList()
+        };
 
         return Task.FromResult(orderDto);
     }

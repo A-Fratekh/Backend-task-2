@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MediatR;
+using OrderProcessing.Domain.SeedWork;
+using OrderProcessing.Domain.Shared;
+
+namespace OrderProcessing.Domain.Aggregates.ProductAggregate;
+
+public class ProductPriceChangedEvent : IDomainEvent, INotification
+{
+    public int ProductId { get; }
+    public Money OldPrice { get; }
+    public Money NewPrice { get; }
+    public DateTime OccurredOn { get; }
+    public Guid EventId { get; }
+
+    public ProductPriceChangedEvent(int productId, Money oldPrice, Money newPrice)
+    {
+        ProductId = productId;
+        OldPrice = oldPrice;
+        NewPrice = newPrice;
+        OccurredOn = DateTime.UtcNow;
+        EventId = Guid.NewGuid();
+    }
+
+
+}

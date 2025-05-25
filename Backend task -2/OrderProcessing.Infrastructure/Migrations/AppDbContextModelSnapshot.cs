@@ -24,23 +24,21 @@ namespace OrderProcessing.Infrastructure.Migrations
 
             modelBuilder.Entity("OrderProcessing.Domain.Aggregates.OrderAggregate.Order", b =>
                 {
-                    b.Property<int>("OrderId")
+                    b.Property<int>("Id")
                         .HasColumnType("int");
 
                     b.Property<string>("CustomerName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateOnly>("Date")
                         .HasColumnType("date");
 
-                    b.Property<bool>("IsSubmitted")
-                        .HasColumnType("bit");
-
                     b.Property<int>("State")
                         .HasColumnType("int");
 
-                    b.HasKey("OrderId");
+                    b.HasKey("Id");
 
                     b.ToTable("Orders");
                 });
@@ -72,7 +70,7 @@ namespace OrderProcessing.Infrastructure.Migrations
 
             modelBuilder.Entity("OrderProcessing.Domain.Aggregates.ProductAggregate.Product", b =>
                 {
-                    b.Property<int>("ProductId")
+                    b.Property<int>("Id")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -87,35 +85,35 @@ namespace OrderProcessing.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("varbinary(max)");
 
-                    b.HasKey("ProductId");
+                    b.HasKey("Id");
 
                     b.ToTable("Products");
 
                     b.HasData(
                         new
                         {
-                            ProductId = 1,
+                            Id = 1,
                             Description = "6 Shawerma Pcs",
                             Name = "Sahwerma Meal",
                             Photo = new byte[0]
                         },
                         new
                         {
-                            ProductId = 2,
+                            Id = 2,
                             Description = "Zinger wrap",
                             Name = "Zinger Sandwich",
                             Photo = new byte[0]
                         },
                         new
                         {
-                            ProductId = 3,
+                            Id = 3,
                             Description = "9 Shawerma Pcs",
                             Name = "Super Sahwerma Meal",
                             Photo = new byte[0]
                         },
                         new
                         {
-                            ProductId = 4,
+                            Id = 4,
                             Description = "Italian Shawerma",
                             Name = "Italian Sahwerma Meal",
                             Photo = new byte[0]

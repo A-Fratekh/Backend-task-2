@@ -45,3 +45,19 @@ D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Applicati
 D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\refint\OrderProcessing.Application.dll
 D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.pdb
 D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\ref\OrderProcessing.Application.dll
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\bin\Debug\net9.0\OrderProcessing.Application.deps.json
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\bin\Debug\net9.0\OrderProcessing.Application.dll
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\bin\Debug\net9.0\OrderProcessing.Application.pdb
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\bin\Debug\net9.0\OrderProcessing.Domain.dll
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\bin\Debug\net9.0\OrderProcessing.Domain.pdb
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.csproj.AssemblyReference.cache
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.AssemblyInfoInputs.cache
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.AssemblyInfo.cs
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.csproj.CoreCompileInputs.cache
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.sourcelink.json
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderPro.D38CDE08.Up2Date
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.dll
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\refint\OrderProcessing.Application.dll
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\OrderProcessing.Application.pdb
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Application\obj\Debug\net9.0\ref\OrderProcessing.Application.dll

@@ -57,3 +57,23 @@ D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Infrastru
 D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\OrderProcessing.Infrastructure.pdb
 D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\OrderProcessing.Infrastructure.genruntimeconfig.cache
 D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\ref\OrderProcessing.Infrastructure.dll
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\bin\Debug\net9.0\OrderProcessing.Infrastructure.deps.json
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\bin\Debug\net9.0\OrderProcessing.Infrastructure.runtimeconfig.json
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\bin\Debug\net9.0\OrderProcessing.Infrastructure.dll
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\bin\Debug\net9.0\OrderProcessing.Infrastructure.pdb
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\bin\Debug\net9.0\OrderProcessing.Application.dll
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\bin\Debug\net9.0\OrderProcessing.Domain.dll
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\bin\Debug\net9.0\OrderProcessing.Domain.pdb
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\bin\Debug\net9.0\OrderProcessing.Application.pdb
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\OrderProcessing.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\OrderProcessing.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\OrderProcessing.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\OrderProcessing.Infrastructure.AssemblyInfo.cs
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\OrderProcessing.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\OrderProcessing.Infrastructure.sourcelink.json
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\OrderPro.3CB8FC4D.Up2Date
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\OrderProcessing.Infrastructure.dll
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\refint\OrderProcessing.Infrastructure.dll
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\OrderProcessing.Infrastructure.pdb
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\OrderProcessing.Infrastructure.genruntimeconfig.cache
+C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Infrastructure\obj\Debug\net9.0\ref\OrderProcessing.Infrastructure.dll

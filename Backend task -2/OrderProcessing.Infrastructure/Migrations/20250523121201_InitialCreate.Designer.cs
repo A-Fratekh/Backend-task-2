@@ -12,8 +12,8 @@ using OrderProcessing.Infrastructure.Data;
 namespace OrderProcessing.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250522131807_SeedingDb")]
-    partial class SeedingDb
+    [Migration("20250523121201_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
