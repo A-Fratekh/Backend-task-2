@@ -1,6 +1,4 @@
-﻿using OrderProcessing.Domain;
-
-namespace OrderProcessing.Domain.SeedWork;
+﻿namespace OrderProcessing.Domain.SeedWork;
 public interface IRepository <T> where T : IAggregateRoot
 {
     void Add(T entity);

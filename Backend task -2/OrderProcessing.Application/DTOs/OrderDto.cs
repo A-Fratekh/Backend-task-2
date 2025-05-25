@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OrderProcessing.Domain.Aggregates.OrderAggregate;
-using OrderProcessing.Domain.Shared;
-
-namespace OrderProcessing.Application.DTOs;
+﻿namespace OrderProcessing.Application.DTOs;
 
 public class OrderDto
 {

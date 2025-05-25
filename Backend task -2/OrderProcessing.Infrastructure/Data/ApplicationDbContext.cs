@@ -1,9 +1,7 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Proxies;
 using OrderProcessing.Domain.Aggregates.OrderAggregate;
 using OrderProcessing.Domain.Aggregates.ProductAggregate;
-using OrderProcessing.Domain.Shared;
 
 namespace OrderProcessing.Infrastructure.Data;
 

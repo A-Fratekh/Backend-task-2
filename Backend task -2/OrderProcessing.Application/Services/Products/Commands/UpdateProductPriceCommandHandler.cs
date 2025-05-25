@@ -1,6 +1,4 @@
-﻿
-
-using MediatR;
+﻿using MediatR;
 using OrderProcessing.Domain.Aggregates.ProductAggregate;
 using OrderProcessing.Domain.SeedWork;
 using OrderProcessing.Domain.Shared;

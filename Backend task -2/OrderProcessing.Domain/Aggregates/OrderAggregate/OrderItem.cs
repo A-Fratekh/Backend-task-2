@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OrderProcessing.Domain.Aggregates.ProductAggregate;
-using OrderProcessing.Domain.Shared;
+﻿using OrderProcessing.Domain.Shared;
 
 namespace OrderProcessing.Domain.Aggregates.OrderAggregate;
 

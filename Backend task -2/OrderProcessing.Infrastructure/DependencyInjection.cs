@@ -7,37 +7,33 @@ using OrderProcessing.Domain.SeedWork;
 using OrderProcessing.Infrastructure.Data;
 using OrderProcessing.Infrastructure.Migrations;
 using OrderProcessing.Infrastructure.Persistence.Repositories;
-using MediatR;
 
-
-namespace OrderProcessing.Infrastructure
+namespace OrderProcessing.Infrastructure;
+public static class DependencyInjection
 {
-    public static class DependencyInjection
+    public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
-        public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
+        services.AddDbContext<AppDbContext>(options =>
         {
-            services.AddDbContext<AppDbContext>(options =>
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            if (string.IsNullOrEmpty(connectionString))
             {
-                var connectionString = configuration.GetConnectionString("DefaultConnection");
-                if (string.IsNullOrEmpty(connectionString))
-                {
-                    throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-                }
-                options.UseSqlServer(connectionString,
-                    sqlServerOptions => sqlServerOptions.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName));
-                options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
-                options.EnableSensitiveDataLogging();
+                throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+            }
+            options.UseSqlServer(connectionString,
+                sqlServerOptions => sqlServerOptions.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName));
+            options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+            options.EnableSensitiveDataLogging();
 
-            });
-            services.AddScoped<DbContext, AppDbContext>();
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            services.AddScoped(typeof(IReadRepository<>), typeof(ReadRepository<>));
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
+        });
+        services.AddScoped<DbContext, AppDbContext>();
+        services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+        services.AddScoped(typeof(IReadRepository<>), typeof(ReadRepository<>));
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-            services.AddHostedService<MigrationService>();
-           
+        services.AddHostedService<MigrationService>();
+       
 
-            return services;
-        }
+        return services;
     }
 }

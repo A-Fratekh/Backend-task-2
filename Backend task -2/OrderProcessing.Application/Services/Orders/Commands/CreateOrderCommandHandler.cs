@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
 using OrderProcessing.Domain.Aggregates.OrderAggregate;
 using OrderProcessing.Domain.Aggregates.ProductAggregate;
 using OrderProcessing.Domain.SeedWork;
-using OrderProcessing.Domain.Shared;
 
 namespace OrderProcessing.Application.Services.Orders.Commands;
 
@@ -23,17 +17,14 @@ public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand, int
 {
     private readonly IRepository<Order> _orderRepostiory;
     private readonly IReadRepository<Product> _productReadRepostiory;
-    private readonly IReadRepository<Order> _orderReadRepostiory;
 
 
 
     public CreateOrderCommandHandler(IRepository<Order> orderRepostiory,
-        IReadRepository<Product> productReadRepostiory,
-        IReadRepository<Order> orderReadRepostiory)
+        IReadRepository<Product> productReadRepostiory)
     {
         _orderRepostiory = orderRepostiory;
         _productReadRepostiory = productReadRepostiory;
-        _orderReadRepostiory = orderReadRepostiory;
     }
 
     public  Task<int> Handle(CreateOrderCommand request, CancellationToken cancellationToken)

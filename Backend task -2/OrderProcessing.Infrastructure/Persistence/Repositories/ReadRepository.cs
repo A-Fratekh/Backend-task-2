@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using OrderProcessing.Infrastructure.Data;
 using System.Linq.Expressions;
 using OrderProcessing.Domain.SeedWork;
@@ -17,6 +12,7 @@ public class ReadRepository<T> : IReadRepository<T> where T : class
     public ReadRepository(AppDbContext context)
     {
         _context = context;
+        _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
     }
 
     public IEnumerable<T> GetAll()

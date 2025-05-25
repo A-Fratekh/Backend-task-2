@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using MediatR;
-using Microsoft.AspNetCore.Http;
+﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using OrderProcessing.Application.Services.Orders.Commands;
 using OrderProcessing.Application.Services.Orders.Queries;
 using OrderProcessing.Domain.Aggregates.OrderAggregate;

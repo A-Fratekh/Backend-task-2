@@ -1,7 +1,5 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using OrderProcessing.Application.Services.Orders.Commands;
 using OrderProcessing.Application.Services.Products.Commands;
 using OrderProcessing.Domain.SeedWork;
 

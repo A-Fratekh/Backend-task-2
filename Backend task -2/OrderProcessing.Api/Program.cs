@@ -1,12 +1,9 @@
-
-using OrderProcessing;
 using Microsoft.OpenApi.Models;
 using MediatR;
-using Microsoft.AspNetCore.Mvc;
 using OrderProcessing.Infrastructure;
 using OrderProcessing.Application.Services.Orders.Queries;
-using EmployeeProfile.Application.Validators;
 using OrderProcessing.Api.Validation.Orders;
+using OrderProcessing.Api.Validation;
 using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);

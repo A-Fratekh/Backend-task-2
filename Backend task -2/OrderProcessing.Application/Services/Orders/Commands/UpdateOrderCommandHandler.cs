@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
 using OrderProcessing.Domain.Aggregates.OrderAggregate;
 using OrderProcessing.Domain.Aggregates.ProductAggregate;
 using OrderProcessing.Domain.SeedWork;
-using OrderProcessing.Domain.Shared;
 
 namespace OrderProcessing.Application.Services.Orders.Commands;
 

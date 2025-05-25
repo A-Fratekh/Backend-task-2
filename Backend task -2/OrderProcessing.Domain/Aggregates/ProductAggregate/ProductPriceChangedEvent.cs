@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
 using OrderProcessing.Domain.SeedWork;
 using OrderProcessing.Domain.Shared;
 
@@ -22,8 +17,7 @@ public class ProductPriceChangedEvent : IDomainEvent, INotification
         ProductId = productId;
         OldPrice = oldPrice;
         NewPrice = newPrice;
-        OccurredOn = DateTime.UtcNow;
-        EventId = Guid.NewGuid();
+
     }
 
 

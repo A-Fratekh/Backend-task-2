@@ -1,7 +1,5 @@
-﻿using System.Reflection.Metadata;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using OrderProcessing.Domain;
-using OrderProcessing.Domain.Aggregates.OrderAggregate;
 using OrderProcessing.Domain.SeedWork;
 using OrderProcessing.Infrastructure.Data;
 

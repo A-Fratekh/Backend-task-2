@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
 using OrderProcessing.Application.DTOs;
 using OrderProcessing.Domain.Aggregates.OrderAggregate;
 using OrderProcessing.Domain.SeedWork;
@@ -17,11 +12,9 @@ public class GetOrderByIdQuery : IRequest<OrderDto>
 public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, OrderDto>
 {
     private readonly IReadRepository<Order> _orderReadRepository;
-    private readonly IReadRepository<OrderItem> _orderItemsReadRepository;
-    public GetOrderByIdQueryHandler(IReadRepository<Order> orderReadRepository, IReadRepository<OrderItem> orderItemsReadRepository)
+    public GetOrderByIdQueryHandler(IReadRepository<Order> orderReadRepository)
     {
         _orderReadRepository = orderReadRepository;
-        _orderItemsReadRepository = orderItemsReadRepository;
     }
 
     public Task<OrderDto> Handle(GetOrderByIdQuery request, CancellationToken cancellationToken)

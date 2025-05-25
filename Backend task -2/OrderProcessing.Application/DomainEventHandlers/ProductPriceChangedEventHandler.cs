@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 using MediatR;
 using OrderProcessing.Domain.Aggregates.OrderAggregate;
 using OrderProcessing.Domain.Aggregates.ProductAggregate;
@@ -37,7 +33,6 @@ public class ProductPriceChangedEventHandler : INotificationHandler<ProductPrice
         }
 
     }
-
     private async Task<IEnumerable<Order>> GetOrdersContainingProductAsync(int productId, OrderState? state = null)
     { 
         return await Task.FromResult(_orderReadRepository.GetAll().ToList()
