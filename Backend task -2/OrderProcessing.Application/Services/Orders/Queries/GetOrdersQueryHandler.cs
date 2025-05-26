@@ -11,21 +11,14 @@ public class GetOrdersQuery : IRequest<List<OrderDto>>
 public class GetOrdersQueryHandler : IRequestHandler<GetOrdersQuery, List<OrderDto>>
 {
     private readonly IReadRepository<Order> _orderReadRepository;
-    private readonly IReadRepository<OrderItem> _orderItemsReadRepository;
-    public GetOrdersQueryHandler(IReadRepository<Order> orderReadRepository, IReadRepository<OrderItem> orderItemsReadRepository)
+    public GetOrdersQueryHandler(IReadRepository<Order> orderReadRepository)
     {
         _orderReadRepository = orderReadRepository;
-        _orderItemsReadRepository = orderItemsReadRepository;
     }
 
     public Task<List<OrderDto>> Handle(GetOrdersQuery request, CancellationToken cancellationToken)
     {
-        var orders = _orderReadRepository.GetAll();
-        var allOrderItems = _orderItemsReadRepository.GetAll();
-
-        var orderItemsLookup = allOrderItems
-            .GroupBy(oi => oi.OrderId)
-            .ToDictionary(g => g.Key, g => g.ToList());
+        var orders = _orderReadRepository.GetAll().ToList();
 
         var result = orders.Select(order => new OrderDto
         {
@@ -34,14 +27,13 @@ public class GetOrdersQueryHandler : IRequestHandler<GetOrdersQuery, List<OrderD
             Date = order.Date,
             Total = order.Total.Amount,
             State = order.State.ToString(),
-            Items = orderItemsLookup.GetValueOrDefault(order.Id, new List<OrderItem>())
-                .Select(oi => new OrderItemDto
-                {
-                    OrderItemId = oi.OrderItemId,
-                    Price = oi.Price.Amount,
-                    Quantity = oi.Quantity,
-                    Comments = oi.Comments
-                }).ToList()
+            Items = order.OrderItems.Select(oi => new OrderItemDto
+            {
+                OrderItemId = oi.OrderItemId,
+                Price = oi.Price.Amount,
+                Quantity = oi.Quantity,
+                Comments = oi.Comments
+            }).ToList()
         }).ToList();
 
         return Task.FromResult(result);

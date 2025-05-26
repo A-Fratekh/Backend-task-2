@@ -17,6 +17,10 @@ public class Entity
     {
         _domainEvents?.Remove(eventItem);
     }
+    public void ClearDomainEvents()
+    {
+        _domainEvents.Clear();
+    }
     public override bool Equals(object? obj)
     {
         if (obj is null || GetType() != obj.GetType())
@@ -24,10 +28,7 @@ public class Entity
 
         return ReferenceEquals(this, obj);
     }
-    public void ClearDomainEvents()
-    {
-        _domainEvents.Clear();
-    }
+   
     public override int GetHashCode()
     {
         return base.GetHashCode();

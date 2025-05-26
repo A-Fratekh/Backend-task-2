@@ -25,7 +25,6 @@ public class Product :Entity, IAggregateRoot
         {
             var oldPrice = CurrentPrice;
             CurrentPrice = newPrice;
-
             AddDomainEvent(new ProductPriceChangedEvent(Id, oldPrice, newPrice));
         }
     }

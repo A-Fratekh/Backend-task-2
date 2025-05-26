@@ -19,7 +19,7 @@ public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, Order
 
     public Task<OrderDto> Handle(GetOrderByIdQuery request, CancellationToken cancellationToken)
     {
-        var order = _orderReadRepository.GetById(request.OrderId, "OrderItems");
+        var order = _orderReadRepository.GetById(request.OrderId);
 
         var orderDto = new OrderDto
         {

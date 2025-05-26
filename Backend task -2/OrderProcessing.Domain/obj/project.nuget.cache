@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "mSihsbWzwgk=",
+  "dgSpecHash": "lwuw/YHV1Lw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
+  "projectFilePath": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Ahmad\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
-    "C:\\Users\\Ahmad\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\Ahmad\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    "C:\\Users\\a.fratekh\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
+    "C:\\Users\\a.fratekh\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\a.fratekh\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

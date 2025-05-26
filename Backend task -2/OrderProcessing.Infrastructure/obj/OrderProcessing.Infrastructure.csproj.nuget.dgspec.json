@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj": {}
+    "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj": {
+    "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj",
+        "projectUniqueName": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj",
         "projectName": "OrderProcessing.Application",
-        "projectPath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj",
-        "packagesPath": "C:\\Users\\Ahmad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\obj\\",
+        "projectPath": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj",
+        "packagesPath": "C:\\Users\\a.fratekh\\.nuget\\packages\\",
+        "outputPath": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\a.fratekh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj": {
-                "projectPath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj"
+              "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj": {
+                "projectPath": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj"
               }
             }
           }
@@ -48,7 +49,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -83,24 +84,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj": {
+    "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
+        "projectUniqueName": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
         "projectName": "OrderProcessing.Domain",
-        "projectPath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
-        "packagesPath": "C:\\Users\\Ahmad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\obj\\",
+        "projectPath": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj",
+        "packagesPath": "C:\\Users\\a.fratekh\\.nuget\\packages\\",
+        "outputPath": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\a.fratekh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -109,6 +110,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -127,7 +129,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -154,24 +156,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj": {
+    "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj",
         "projectName": "OrderProcessing.Infrastructure",
-        "projectPath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Ahmad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Infrastructure\\obj\\",
+        "projectPath": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\OrderProcessing.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\a.fratekh\\.nuget\\packages\\",
+        "outputPath": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\a.fratekh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -180,17 +182,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj": {
-                "projectPath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj"
+              "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj": {
+                "projectPath": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Application\\OrderProcessing.Application.csproj"
               },
-              "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj": {
-                "projectPath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj"
+              "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj": {
+                "projectPath": "D:\\Ahmad\\Desktop\\github\\Backend task-2\\Backend task -2\\OrderProcessing.Domain\\OrderProcessing.Domain.csproj"
               }
             }
           }
@@ -205,7 +208,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -258,7 +261,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

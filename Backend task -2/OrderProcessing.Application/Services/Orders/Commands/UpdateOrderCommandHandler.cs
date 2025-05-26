@@ -18,74 +18,83 @@ public class UpdateOrderCommandHandler : IRequestHandler<UpdateOrderCommand>
 {
     private readonly IRepository<Order> _orderRepostiory;
     private readonly IReadRepository<Order> _orderReadRepository;
-    private readonly IReadRepository<OrderItem> _orderItemsReadRepository;
     private readonly IReadRepository<Product> _productReadRepository;
 
     public UpdateOrderCommandHandler(
         IRepository<Order> orderRepostiory,
         IReadRepository<Order> orderReadRepository,
-        IReadRepository<OrderItem> orderItemsReadRepository,
         IReadRepository<Product> productReadRepository)
     {
         _orderRepostiory = orderRepostiory;
         _orderReadRepository = orderReadRepository;
-        _orderItemsReadRepository = orderItemsReadRepository;
         _productReadRepository = productReadRepository;
     }
 
     public Task Handle(UpdateOrderCommand request, CancellationToken cancellationToken)
     {
-        var order = _orderReadRepository.GetById(request.OrderId, "OrderItems");
-        
+        var order = _orderReadRepository.GetById(request.OrderId);
+
         var currentItems = order.OrderItems
             .ToDictionary(oi => new { oi.OrderId, oi.OrderItemId });
 
-        var newItems = request.OrderItems
-            .ToDictionary(oi => new { oi.OrderId, oi.OrderItemId });
-
-        foreach (var newItem in request.OrderItems)
-        {
-            var key = new { newItem.OrderId, newItem.OrderItemId };
-
-            if (currentItems.ContainsKey(key))
+        var uniqueItems = request.OrderItems
+            .GroupBy(oi => oi.ProductId)
+            .Select(g => new
             {
-                var currentItem = _orderItemsReadRepository.GetById(
-                    new object[] { newItem.OrderId, newItem.OrderItemId });
-                var product = _productReadRepository.GetById(currentItem.ProductId);
-                if (currentItem.Price.Amount == product.CurrentPrice.Amount)
+                ProductId = g.Key,
+                TotalQuantity = g.Sum(x => x.Quantity),
+                FirstItem = g.First(),
+                })
+            .ToList();
+
+        var products = _productReadRepository.GetAll()
+            .ToDictionary(p => p.Id);
+
+        foreach (var uniqueItem in uniqueItems)
+        {
+            var firstItem = uniqueItem.FirstItem;
+
+            if (uniqueItem.TotalQuantity == 0)
+            {
+                var itemsToRemove = currentItems.Values
+                    .Where(ci => ci.ProductId == uniqueItem.ProductId)
+                    .ToList();
+
+                foreach (var itemToRemove in itemsToRemove)
                 {
-                    if (newItem.Quantity == 0)
-                    {
-                        order.RemoveOrderItem(newItem.OrderItemId);
-                    }
-                    else
-                    {
-                        order.UpdateOrderItem(newItem.OrderItemId, newItem.Quantity);
-                    }
+                    order.RemoveOrderItem(itemToRemove.OrderItemId);
                 }
-                else
+                continue;
+            }
+
+            var product = products[uniqueItem.ProductId];
+            if (firstItem.Price.Amount != product.CurrentPrice.Amount)
+            {
+                throw new InvalidOperationException(
+                    $"Item {product.Name} with product id {uniqueItem.ProductId} price {firstItem.Price.Amount} doesn't equal product current price {product.CurrentPrice.Amount}");
+            }
+            var existingItem = currentItems.Values
+                .FirstOrDefault(ci => ci.ProductId == uniqueItem.ProductId);
+
+            if (existingItem != null)
+            {
+                order.UpdateOrderItem(existingItem.OrderItemId, uniqueItem.TotalQuantity);
+                var additionalItems = currentItems.Values
+                    .Where(ci => ci.ProductId == uniqueItem.ProductId && ci.OrderItemId != existingItem.OrderItemId)
+                    .ToList();
+
+                foreach (var additionalItem in additionalItems)
                 {
-                    throw new InvalidOperationException($"Item {product.Name} with id {newItem.OrderItemId} price {newItem.Price.Amount} doesn't equal product current price {product.CurrentPrice.Amount}");
+                    order.RemoveOrderItem(additionalItem.OrderItemId);
                 }
             }
             else
             {
-                var product = _productReadRepository.GetById(newItem.ProductId);
-                if (newItem.Price.Amount == product.CurrentPrice.Amount)
-                {
-                    if (newItem.Quantity > 0)
-                    {
-                        order.AddOrderItem(newItem.OrderItemId, request.OrderId, newItem.ProductId,
-                            newItem.Quantity, newItem.Price, newItem.Comments);
-                    }
-                }
-                else
-                {
-                    throw new InvalidOperationException($"Item {product.Name} with id {newItem.OrderItemId} price {newItem.Price.Amount} doesn't equal product current price {product.CurrentPrice.Amount}");
-                }
+                order.AddOrderItem(firstItem.OrderItemId, request.OrderId, uniqueItem.ProductId,
+                    uniqueItem.TotalQuantity, firstItem.Price, firstItem.Comments);
             }
         }
-
+        var newItems = request.OrderItems.ToDictionary(ni => new { ni.OrderId, ni.OrderItemId });
         foreach (var currentItem in currentItems.Values)
         {
             var key = new { currentItem.OrderId, currentItem.OrderItemId };
@@ -94,10 +103,13 @@ public class UpdateOrderCommandHandler : IRequestHandler<UpdateOrderCommand>
                 order.RemoveOrderItem(currentItem.OrderItemId);
             }
         }
-        
+
+        if (request.State == OrderState.Submitted) order.SubmitOrder();
         order.Update(request.CustomerName, request.Date, request.State);
         _orderRepostiory.Update(order);
-       
+
+        if (order.Total.Amount==0) _orderRepostiory.Delete(order);
+
         return Task.CompletedTask;
     }
 }

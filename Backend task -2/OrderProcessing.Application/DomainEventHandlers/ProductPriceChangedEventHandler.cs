@@ -10,21 +10,18 @@ public class ProductPriceChangedEventHandler : INotificationHandler<ProductPrice
 {
     private readonly IReadRepository<Order> _orderReadRepository;
     private readonly IRepository<Order> _orderRepository;
-    private readonly IReadRepository<OrderItem> _orderItemsReadRepository;
 
     public ProductPriceChangedEventHandler(
         IReadRepository<Order> orderReadRepository,
-        IRepository<Order> orderRepository,
-        IReadRepository<OrderItem> orderItemsReadRepository)
+        IRepository<Order> orderRepository)
     {
         _orderReadRepository = orderReadRepository;
         _orderRepository = orderRepository;
-        _orderItemsReadRepository = orderItemsReadRepository;
     }
 
     public async Task Handle(ProductPriceChangedEvent notification, CancellationToken cancellationToken)
     {
-        var ordersWithProduct = await GetOrdersContainingProductAsync(notification.ProductId, OrderState.Draft);
+        var ordersWithProduct = await GetOrdersContainingProductAsync(notification.ProductId);
 
         foreach (var order in ordersWithProduct)
         {
@@ -33,11 +30,11 @@ public class ProductPriceChangedEventHandler : INotificationHandler<ProductPrice
         }
 
     }
-    private async Task<IEnumerable<Order>> GetOrdersContainingProductAsync(int productId, OrderState? state = null)
+    private async Task<IEnumerable<Order>> GetOrdersContainingProductAsync(int productId)
     { 
         return await Task.FromResult(_orderReadRepository.GetAll().ToList()
             .Where(o => o.OrderItems.Any(oi => oi.ProductId == productId) &&
-                       (!state.HasValue || o.State == state.Value))
+                       (o.State == OrderState.Draft))
             .AsEnumerable());
     }
 }

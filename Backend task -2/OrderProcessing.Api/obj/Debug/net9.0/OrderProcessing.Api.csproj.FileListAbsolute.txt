@@ -651,7 +651,6 @@ D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Api\obj\D
 D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.OrderProcessing.Api.props
 D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.OrderProcessing.Api.props
 D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Api\obj\Debug\net9.0\staticwebassets.pack.json
-D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Api\obj\Debug\net9.0\OrderPro.8BCC3F0D.Up2Date
 D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Api\obj\Debug\net9.0\OrderProcessing.Api.dll
 D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Api\obj\Debug\net9.0\refint\OrderProcessing.Api.dll
@@ -953,3 +952,5 @@ C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Api
 C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Api\obj\Debug\net9.0\OrderProcessing.Api.pdb
 C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Api\obj\Debug\net9.0\OrderProcessing.Api.genruntimeconfig.cache
 C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Api\obj\Debug\net9.0\ref\OrderProcessing.Api.dll
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Api\bin\Debug\net9.0\Castle.Core.dll
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Proxies.dll

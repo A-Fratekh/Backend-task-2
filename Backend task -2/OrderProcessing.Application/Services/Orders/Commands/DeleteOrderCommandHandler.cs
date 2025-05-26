@@ -13,7 +13,6 @@ public class DeleteOrderCommandHandler : IRequestHandler<DeleteOrderCommand>
     private readonly IReadRepository<Order> _orderReadRepository;
     private readonly IRepository<Order> _orderRepository;
 
-
     public DeleteOrderCommandHandler(IReadRepository<Order> orderReadRepository, IRepository<Order> orderRepository)
     {
         _orderReadRepository = orderReadRepository;

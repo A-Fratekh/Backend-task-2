@@ -59,7 +59,7 @@ public class AppDbContext : DbContext
                 new { ProductId = 4, Amount = 3.5m }
                 );
             entity.HasData(
-                new { Id = 1,  Name = "Sahwerma Meal", Description = "6 Shawerma Pcs", Photo = new byte[] { } },
+                new { Id = 1,  Name = "Sahwerma Meal", Description = "6 Shawerma Pcs", Photo = File.ReadAllBytes("./DataSeeding/Images/shawerma_meal.jpg")},
                 new { Id = 2, Name = "Zinger Sandwich", Description = "Zinger wrap", Photo = new byte[] { } },
                 new { Id = 3, Name = "Super Sahwerma Meal", Description = "9 Shawerma Pcs", Photo = new byte[] { } },
                 new { Id = 4, Name = "Italian Sahwerma Meal", Description = "Italian Shawerma", Photo = new byte[] { } }

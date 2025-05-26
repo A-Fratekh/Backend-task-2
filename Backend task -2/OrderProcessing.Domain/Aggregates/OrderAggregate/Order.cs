@@ -41,7 +41,6 @@ public class Order : Entity, IAggregateRoot
         {
             throw new NullReferenceException($"Item with id {itemId} does not exist");
         }
-        item.UpdateQuantity(0);
         _orderItems.Remove(item);
     }
     public Money CalculateOrderTotalAmount()

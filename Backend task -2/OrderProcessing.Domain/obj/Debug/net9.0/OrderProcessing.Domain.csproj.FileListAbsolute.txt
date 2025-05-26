@@ -46,3 +46,4 @@ C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Dom
 C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\refint\OrderProcessing.Domain.dll
 C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\OrderProcessing.Domain.pdb
 C:\Users\Ahmad\Desktop\github\Backend-task-2\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\ref\OrderProcessing.Domain.dll
+D:\Ahmad\Desktop\github\Backend task-2\Backend task -2\OrderProcessing.Domain\obj\Debug\net9.0\OrderProcessing.Domain.csproj.AssemblyReference.cache
