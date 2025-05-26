@@ -14,7 +14,7 @@ public class AppDbContext : DbContext
     public DbSet<Order> Orders { get; set; }
     public DbSet<OrderItem> OrderItems { get; set; }
     public DbSet<Product> Products { get; set; }
-
+    public DbSet<OrderState> States { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseLazyLoadingProxies(); 
@@ -25,10 +25,16 @@ public class AppDbContext : DbContext
         {
             entity.HasKey(o => o.Id);
             entity.Property(o => o.Id).ValueGeneratedNever();
-            entity.Property(o=>o.State).IsRequired();
             entity.Property(o => o.Date).IsRequired();
             entity.Property(o => o.CustomerName).IsRequired().HasMaxLength(100);
+            entity.Property(o => o.StateId).IsRequired();
+
             entity.OwnsOne(o => o.Total);
+
+            entity.HasOne(o => o.State)
+                .WithOne()
+                .OnDelete(DeleteBehavior.Restrict);
+
             entity.HasMany(o => o.OrderItems)
                 .WithOne()
                 .HasForeignKey(oi => oi.OrderId)
@@ -37,11 +43,11 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<OrderItem>(entity =>
         {
-            entity.HasKey(oi=>new { oi.OrderId, oi.OrderItemId });
+            entity.HasKey(oi=>new { oi.OrderId, oi.Id });
             entity.HasOne<Product>().WithOne();
             entity.Property(oi=>oi.ProductId).IsRequired().ValueGeneratedNever();
             entity.Property(oi => oi.OrderId).IsRequired().ValueGeneratedNever();
-            entity.Property(oi => oi.OrderItemId).IsRequired().ValueGeneratedNever();
+            entity.Property(oi => oi.Id).IsRequired().ValueGeneratedNever();
             entity.Property(oi => oi.Quantity).IsRequired();
             entity.OwnsOne(oi => oi.Price);
 
@@ -66,5 +72,16 @@ public class AppDbContext : DbContext
                  );
 
     });
+
+        modelBuilder.Entity<OrderState>(entity =>
+        {
+            entity.HasKey(os=>os.Id);
+            entity.Property(os=>os.Id).IsRequired().ValueGeneratedNever();
+            entity.Property(os=>os.StateName).IsRequired();
+            entity.HasData(
+               new { StateId = 1, StateName = "Draft" },
+               new { StateId = 2, StateName = "Submitted" }
+               );
+        });
     }
 }

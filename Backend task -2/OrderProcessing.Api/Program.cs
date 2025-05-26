@@ -1,10 +1,10 @@
 using Microsoft.OpenApi.Models;
 using MediatR;
-using OrderProcessing.Infrastructure;
 using OrderProcessing.Application.Services.Orders.Queries;
 using OrderProcessing.Api.Validation.Orders;
 using OrderProcessing.Api.Validation;
 using FluentValidation;
+using OrderProcessing.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 

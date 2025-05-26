@@ -1,7 +1,17 @@
 ﻿namespace OrderProcessing.Domain.Aggregates.OrderAggregate;
 
- public enum OrderState
+ public class OrderState :Entity
 {
-    Draft,
-    Submitted
+    public string StateName { get; private set; }
+
+    public OrderState (int stateId, string stateName)
+    {
+        Id = stateId;
+        StateName = stateName;
+    }
+    internal void SetState( string name)
+    {
+        StateName = name;
+    }
+
 }

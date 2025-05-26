@@ -1,9 +1,10 @@
 ﻿using FluentValidation;
 using OrderProcessing.Application.Services.Orders.Commands;
+using OrderProcessing.Domain.Aggregates.OrderAggregate;
 
 namespace OrderProcessing.Api.Validation.Orders;
 
-public class OrderValidator : AbstractValidator<CreateOrderCommand>
+public class OrderValidator : AbstractValidator<Order>
 {
     public OrderValidator()
     {
@@ -25,6 +26,5 @@ public class OrderValidator : AbstractValidator<CreateOrderCommand>
         RuleFor(o => o.OrderItems)
             .Must(items => items.Count > 0).WithMessage("At Least One Order Item Must Be Provided")
             .WithName("Order Items");
-
     }
 }

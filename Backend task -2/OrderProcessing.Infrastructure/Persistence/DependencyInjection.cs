@@ -1,6 +1,4 @@
-﻿
-using OrderProcessing.Infrastructure.Persistence;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OrderProcessing.Domain.SeedWork;
@@ -8,7 +6,7 @@ using OrderProcessing.Infrastructure.Data;
 using OrderProcessing.Infrastructure.Migrations;
 using OrderProcessing.Infrastructure.Persistence.Repositories;
 
-namespace OrderProcessing.Infrastructure;
+namespace OrderProcessing.Infrastructure.Persistence;
 public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)

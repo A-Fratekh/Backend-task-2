@@ -10,32 +10,33 @@ public class UpdateOrderCommand : IRequest
     public int OrderId { get; set; }
     public DateOnly Date { get; set; }
     public string CustomerName { get; set; }
-    public OrderState State { get; set; }
+    public int StateId { get; set; }
     public List<OrderItem> OrderItems { get; set; }
 }
 
 public class UpdateOrderCommandHandler : IRequestHandler<UpdateOrderCommand>
 {
     private readonly IRepository<Order> _orderRepostiory;
-    private readonly IReadRepository<Order> _orderReadRepository;
     private readonly IReadRepository<Product> _productReadRepository;
+    private readonly IReadRepository<OrderState> _stateReadRepository;
+
 
     public UpdateOrderCommandHandler(
         IRepository<Order> orderRepostiory,
-        IReadRepository<Order> orderReadRepository,
-        IReadRepository<Product> productReadRepository)
+        IReadRepository<Product> productReadRepository,
+        IReadRepository<OrderState> stateReadRepository)
     {
         _orderRepostiory = orderRepostiory;
-        _orderReadRepository = orderReadRepository;
         _productReadRepository = productReadRepository;
+        _stateReadRepository = stateReadRepository;
     }
 
     public Task Handle(UpdateOrderCommand request, CancellationToken cancellationToken)
     {
-        var order = _orderReadRepository.GetById(request.OrderId);
+        var order = _orderRepostiory.GetById(request.OrderId);
 
         var currentItems = order.OrderItems
-            .ToDictionary(oi => new { oi.OrderId, oi.OrderItemId });
+            .ToDictionary(oi => new { oi.OrderId, oi.Id });
 
         var uniqueItems = request.OrderItems
             .GroupBy(oi => oi.ProductId)
@@ -62,7 +63,7 @@ public class UpdateOrderCommandHandler : IRequestHandler<UpdateOrderCommand>
 
                 foreach (var itemToRemove in itemsToRemove)
                 {
-                    order.RemoveOrderItem(itemToRemove.OrderItemId);
+                    order.RemoveOrderItem(itemToRemove.Id);
                 }
                 continue;
             }
@@ -78,34 +79,35 @@ public class UpdateOrderCommandHandler : IRequestHandler<UpdateOrderCommand>
 
             if (existingItem != null)
             {
-                order.UpdateOrderItem(existingItem.OrderItemId, uniqueItem.TotalQuantity);
+                order.UpdateOrderItem(existingItem.Id, uniqueItem.TotalQuantity);
                 var additionalItems = currentItems.Values
-                    .Where(ci => ci.ProductId == uniqueItem.ProductId && ci.OrderItemId != existingItem.OrderItemId)
+                    .Where(ci => ci.ProductId == uniqueItem.ProductId && ci.Id != existingItem.Id)
                     .ToList();
 
                 foreach (var additionalItem in additionalItems)
                 {
-                    order.RemoveOrderItem(additionalItem.OrderItemId);
+                    order.RemoveOrderItem(additionalItem.Id);
                 }
             }
             else
             {
-                order.AddOrderItem(firstItem.OrderItemId, request.OrderId, uniqueItem.ProductId,
+                order.AddOrderItem(firstItem.Id, request.OrderId, uniqueItem.ProductId,
                     uniqueItem.TotalQuantity, firstItem.Price, firstItem.Comments);
             }
         }
-        var newItems = request.OrderItems.ToDictionary(ni => new { ni.OrderId, ni.OrderItemId });
+        var newItems = request.OrderItems.ToDictionary(ni => new { ni.OrderId, ni.Id });
         foreach (var currentItem in currentItems.Values)
         {
-            var key = new { currentItem.OrderId, currentItem.OrderItemId };
+            var key = new { currentItem.OrderId, currentItem.Id };
             if (!newItems.ContainsKey(key))
             {
-                order.RemoveOrderItem(currentItem.OrderItemId);
+                order.RemoveOrderItem(currentItem.Id);
             }
         }
-
-        if (request.State == OrderState.Submitted) order.SubmitOrder();
-        order.Update(request.CustomerName, request.Date, request.State);
+        var state = _stateReadRepository.GetById(request.StateId);
+        if (state == null)  throw new ArgumentException($"State with id {request.StateId} could not be found");
+        if (state.StateName == "Submitted") order.SubmitOrder();
+        order.Update(request.CustomerName, request.Date, request.StateId);
         _orderRepostiory.Update(order);
 
         if (order.Total.Amount==0) _orderRepostiory.Delete(order);

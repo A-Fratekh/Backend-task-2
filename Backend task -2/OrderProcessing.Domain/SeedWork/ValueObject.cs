@@ -29,7 +29,6 @@ public abstract class ValueObject
 
         return GetEqualityComponents().SequenceEqual(other.GetEqualityComponents());
     }
-
     public override int GetHashCode()
     {
         return GetEqualityComponents()

@@ -23,7 +23,7 @@ public class UpdateProductPriceCommandHandler : IRequestHandler<UpdateProductPri
     {
         var product = _productReadRepository.GetById(request.ProductId) ??
             throw new NullReferenceException($"Product with id {request.ProductId} not found");
-        product.UpdatePrice(new Money(request.NewPrice));
+        product.UpdatePrice(product.CurrentPrice.SetAmount(request.NewPrice));
         _productRepository.Update(product);
         return Task.CompletedTask;
     }

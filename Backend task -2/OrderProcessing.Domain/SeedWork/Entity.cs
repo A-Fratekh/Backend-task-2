@@ -4,6 +4,7 @@ namespace OrderProcessing.Domain;
 
 public class Entity
 {
+    public int Id { get; set; }
     private List<INotification> _domainEvents=new();
     public List<INotification> DomainEvents => _domainEvents;
 

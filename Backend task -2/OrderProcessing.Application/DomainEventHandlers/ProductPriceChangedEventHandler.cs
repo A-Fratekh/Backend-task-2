@@ -18,7 +18,6 @@ public class ProductPriceChangedEventHandler : INotificationHandler<ProductPrice
         _orderReadRepository = orderReadRepository;
         _orderRepository = orderRepository;
     }
-
     public async Task Handle(ProductPriceChangedEvent notification, CancellationToken cancellationToken)
     {
         var ordersWithProduct = await GetOrdersContainingProductAsync(notification.ProductId);
@@ -28,13 +27,11 @@ public class ProductPriceChangedEventHandler : INotificationHandler<ProductPrice
             order.UpdateOrderItemPricesForProduct(notification.ProductId, notification.NewPrice);
             _orderRepository.Update(order);
         }
-
     }
     private async Task<IEnumerable<Order>> GetOrdersContainingProductAsync(int productId)
     { 
         return await Task.FromResult(_orderReadRepository.GetAll().ToList()
             .Where(o => o.OrderItems.Any(oi => oi.ProductId == productId) &&
-                       (o.State == OrderState.Draft))
-            .AsEnumerable());
+                       (o.State.StateName == "Draft")).AsEnumerable());
     }
 }

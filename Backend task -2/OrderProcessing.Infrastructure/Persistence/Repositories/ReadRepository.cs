@@ -12,6 +12,7 @@ public class ReadRepository<T> : IReadRepository<T> where T : class
     public ReadRepository(AppDbContext context)
     {
         _context = context;
+        _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
     }
 
     public IEnumerable<T> GetAll()
@@ -30,5 +31,6 @@ public class ReadRepository<T> : IReadRepository<T> where T : class
 
         return entity;
     }
+
 
 }

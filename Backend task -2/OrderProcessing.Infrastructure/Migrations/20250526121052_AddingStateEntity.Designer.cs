@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OrderProcessing.Infrastructure.Data;
 
@@ -11,9 +12,11 @@ using OrderProcessing.Infrastructure.Data;
 namespace OrderProcessing.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250526121052_AddingStateEntity")]
+    partial class AddingStateEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -86,18 +89,6 @@ namespace OrderProcessing.Infrastructure.Migrations
                     b.HasKey("StateId");
 
                     b.ToTable("States");
-
-                    b.HasData(
-                        new
-                        {
-                            StateId = 1,
-                            StateName = "Draft"
-                        },
-                        new
-                        {
-                            StateId = 2,
-                            StateName = "Submitted"
-                        });
                 });
 
             modelBuilder.Entity("OrderProcessing.Domain.Aggregates.ProductAggregate.Product", b =>

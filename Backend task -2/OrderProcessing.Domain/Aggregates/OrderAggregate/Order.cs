@@ -1,14 +1,13 @@
 ﻿using OrderProcessing.Domain.Shared;
-
 namespace OrderProcessing.Domain.Aggregates.OrderAggregate;
 
 public class Order : Entity, IAggregateRoot
 {
-    public int Id { get; private set; }
     public DateOnly Date { get; private set; }
     public string CustomerName { get; private set; }
     public Money Total { get; private set; }
-    public OrderState State { get; private set; } = OrderState.Draft;
+    public int StateId { get; private set; }
+    public virtual OrderState State { get; private set; }
     private readonly List<OrderItem> _orderItems = [];
     public virtual IReadOnlyList<OrderItem> OrderItems => _orderItems.ToList();
 
@@ -18,51 +17,59 @@ public class Order : Entity, IAggregateRoot
         int orderId,
         DateOnly date,
         string customerName,
-        OrderState state,
+        int stateId,
         List<OrderItem> orderItems
         )
     {
         Id = orderId;
         Date = date;
         CustomerName = customerName;
-        State = state;
+        StateId = stateId;
         _orderItems = orderItems;
         Total = CalculateOrderTotalAmount();
     }
+
     public void AddOrderItem(int orderItemId, int orderId, int productId, int quantity, Money price, string? comments)
     {
+        if (IsSubmitted()) throw new ArgumentException("Can't add items to a submitted order");
         var item = new OrderItem(orderId, orderItemId, productId, quantity, price, comments);
         _orderItems.Add(item);
     }
+
     public void RemoveOrderItem(int itemId)
     {
-        var item = _orderItems.FirstOrDefault(oi => oi.OrderItemId == itemId);
+        if (IsSubmitted()) throw new ArgumentException("Can't remove items from a submitted order");
+        var item = _orderItems.FirstOrDefault(oi => oi.Id == itemId);
         if (item == null)
         {
             throw new NullReferenceException($"Item with id {itemId} does not exist");
         }
         _orderItems.Remove(item);
     }
+
     public Money CalculateOrderTotalAmount()
     {
-        Total = new Money(0);
+        Total = Total.SetAmount(0);
         decimal total = 0;
         foreach (var item in _orderItems)
         {
             total += item.Price.Amount * item.Quantity;
         }
-        Total.Amount = total;
+        Total.SetAmount(total);
         return Total;
     }
+
     public void SubmitOrder()
     {
-        State = OrderState.Submitted;
+        if (IsSubmitted()) throw new ArgumentException("Can't submit an already submitted order");
+        StateId = 2;
+        State.SetState("Submitted");
     }
 
     public void UpdateOrderItem(int orderItemId, int quantity)
     {
-
-        var item = _orderItems.FirstOrDefault(oi => oi.OrderItemId == orderItemId);
+        if (IsSubmitted()) throw new ArgumentException("Can't update items of a submitted order");
+        var item = _orderItems.FirstOrDefault(oi => oi.Id == orderItemId);
         if (item == null)
         {
             throw new NullReferenceException($"Item with id {orderItemId} does not exist");
@@ -73,7 +80,6 @@ public class Order : Entity, IAggregateRoot
     public void UpdateOrderItemPricesForProduct(int productId, Money newPrice)
     {
         var itemsToUpdate = _orderItems.Where(oi => oi.ProductId == productId).ToList();
-
         foreach (var item in itemsToUpdate)
         {
             item.UpdatePrice(newPrice);
@@ -81,11 +87,17 @@ public class Order : Entity, IAggregateRoot
         Total = CalculateOrderTotalAmount();
     }
 
-    public void Update(string customerName, DateOnly date, OrderState state)
+    public void Update(string customerName, DateOnly date, int stateId)
     {
         CustomerName = customerName ?? throw new ArgumentNullException(nameof(customerName));
         Date = date;
-        State = state;
+        StateId = stateId;
         Total = CalculateOrderTotalAmount();
+    }
+
+
+    private bool IsSubmitted()
+    {
+        return StateId == 2;
     }
 }

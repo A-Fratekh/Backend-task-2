@@ -7,27 +7,31 @@ namespace OrderProcessing.Application.Services.Orders.Commands;
 
 public class CreateOrderCommand : IRequest<int>
 {
-    public int Id { get; set; }
     public DateOnly Date {  get; set; }
     public string CustomerName { get; set; }
-    public OrderState State { get; set; }
+    public int StateId { get; set; }
     public List<OrderItem> OrderItems { get; set; }
 }
 public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand, int>
 {
     private readonly IRepository<Order> _orderRepostiory;
     private readonly IReadRepository<Product> _productReadRepostiory;
+    private readonly IReadRepository<OrderState> _stateReadRepostiory;
+
 
     public CreateOrderCommandHandler(IRepository<Order> orderRepostiory,
-        IReadRepository<Product> productReadRepostiory)
+        IReadRepository<Product> productReadRepostiory,
+        IReadRepository<OrderState> stateReadRepostiory)
     {
         _orderRepostiory = orderRepostiory;
         _productReadRepostiory = productReadRepostiory;
+        _stateReadRepostiory= stateReadRepostiory;
     }
 
     public  Task<int> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
     {
-        if (request.State == OrderState.Draft)
+        var state=  _stateReadRepostiory.GetById(request.StateId);
+       if(state.StateName=="Draft")
         {
             var products = _productReadRepostiory.GetAll()
                 .ToDictionary(p => p.Id);
@@ -38,12 +42,12 @@ public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand, int
 
                 if (item.Price.Amount != product.CurrentPrice.Amount)
                 {
-                    throw new ArgumentException($"Item {product.Name} with Id : {item.OrderItemId} price {item.Price.Amount} doesn't equal product {product.Name} current price {product.CurrentPrice.Amount}");
+                    throw new ArgumentException($"Item {product.Name} with Id : {item.Id} price {item.Price.Amount} doesn't equal product {product.Name} current price {product.CurrentPrice.Amount}");
                 }
             }
         }
-        var order = new Order(request.Id, request.Date, request.CustomerName,
-             request.State, request.OrderItems);
+        var order = new Order(_orderRepostiory.GetNextId(), request.Date, request.CustomerName,
+             request.StateId, request.OrderItems);
         var productGroups = request.OrderItems
             .GroupBy(oi => oi.ProductId)
             .Where(g => g.Count() > 1)
@@ -56,16 +60,14 @@ public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand, int
 
             foreach (var item in group)
             {
-                order.RemoveOrderItem(item.OrderItemId);
+                order.RemoveOrderItem(item.Id);
             }
-
             if (totalQuantity > 0)
             {
-                order.AddOrderItem(firstItem.OrderItemId, request.Id, firstItem.ProductId,
+                order.AddOrderItem(firstItem.Id, order.Id, firstItem.ProductId,
                     totalQuantity, firstItem.Price, firstItem.Comments);
             }
         }
-
         _orderRepostiory.Add(order);
         return Task.FromResult(order.Id);
     }

@@ -12,8 +12,8 @@ using OrderProcessing.Infrastructure.Data;
 namespace OrderProcessing.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250526072035_SeedingDb4")]
-    partial class SeedingDb4
+    [Migration("20250526122646_UpdatingStateEntity")]
+    partial class UpdatingStateEntity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -41,10 +41,13 @@ namespace OrderProcessing.Infrastructure.Migrations
                     b.Property<DateOnly>("Date")
                         .HasColumnType("date");
 
-                    b.Property<int>("State")
+                    b.Property<int>("StateId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("StateId")
+                        .IsUnique();
 
                     b.ToTable("Orders");
                 });
@@ -72,6 +75,32 @@ namespace OrderProcessing.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("OrderItems");
+                });
+
+            modelBuilder.Entity("OrderProcessing.Domain.Aggregates.OrderAggregate.OrderState", b =>
+                {
+                    b.Property<int>("StateId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("StateName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("StateId");
+
+                    b.ToTable("States");
+
+                    b.HasData(
+                        new
+                        {
+                            StateId = 1,
+                            StateName = "Draft"
+                        },
+                        new
+                        {
+                            StateId = 2,
+                            StateName = "Submitted"
+                        });
                 });
 
             modelBuilder.Entity("OrderProcessing.Domain.Aggregates.ProductAggregate.Product", b =>
@@ -128,6 +157,12 @@ namespace OrderProcessing.Infrastructure.Migrations
 
             modelBuilder.Entity("OrderProcessing.Domain.Aggregates.OrderAggregate.Order", b =>
                 {
+                    b.HasOne("OrderProcessing.Domain.Aggregates.OrderAggregate.OrderState", "State")
+                        .WithOne()
+                        .HasForeignKey("OrderProcessing.Domain.Aggregates.OrderAggregate.Order", "StateId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.OwnsOne("OrderProcessing.Domain.Shared.Money", "Total", b1 =>
                         {
                             b1.Property<int>("OrderId")
@@ -143,6 +178,8 @@ namespace OrderProcessing.Infrastructure.Migrations
                             b1.WithOwner()
                                 .HasForeignKey("OrderId");
                         });
+
+                    b.Navigation("State");
 
                     b.Navigation("Total")
                         .IsRequired();

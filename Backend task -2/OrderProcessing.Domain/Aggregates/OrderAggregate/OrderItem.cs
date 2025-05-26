@@ -4,7 +4,6 @@ namespace OrderProcessing.Domain.Aggregates.OrderAggregate;
 
 public class OrderItem : Entity
 {
-    public int OrderItemId { get; private set; }
     public int OrderId { get; private set; }
     public int ProductId { get; private set; }
     public int Quantity { get; private set; }
@@ -14,7 +13,7 @@ public class OrderItem : Entity
     public OrderItem( int orderId, int orderItemId, int productId, int quantity,Money price, string? comments)
     {
         OrderId = orderId;
-        OrderItemId = orderItemId;
+        Id = orderItemId;
         ProductId = productId;
         Quantity = quantity;
         Price = price;
